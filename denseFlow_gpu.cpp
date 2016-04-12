@@ -130,9 +130,9 @@ int main(int argc, char** argv){
 		sprintf(tmp,"_%04d.jpg",int(frame_num));
 
 		Mat imgX_, imgY_, image_;
-		resize(imgX,imgX_,cv::Size(340,256));
-		resize(imgY,imgY_,cv::Size(340,256));
-		resize(image,image_,cv::Size(340,256));
+		resize(imgX,imgX_,cv::Size(720,576));
+		resize(imgY,imgY_,cv::Size(720,576));
+		resize(image,image_,cv::Size(720,576));
 
 		imwrite(xFlowFile + tmp,imgX_);
 		imwrite(yFlowFile + tmp,imgY_);
